@@ -11,4 +11,4 @@ A web server and a standalone [Minio](https://min.io) instance are started. MinI
 
 Visit `http://localhost:8088`, select a file from your device, and press the upload button. If the file is uploaded to S3 successfully, the server will return the new file name that is used as an identifier in the bucket.
 
-Visit `http://localhost:9000` and you can view all uploaded files from MinIO GUI.
+Visit `http://localhost:9000` and you can view all uploaded files from MinIO web UI.
