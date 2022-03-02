@@ -32,8 +32,7 @@ services:
     entrypoint: >
       /bin/sh -c "
       /usr/bin/mc config host add myminio http://minio:9000 testaccesskey testsecret;
-      /usr/bin/mc rm -r --force myminio/myfilebucket;
-      /usr/bin/mc mb myminio/myfilebucket;
+      /usr/bin/mc mb myminio/myfilebucket; # create bucket if not exist
       exit 0;
       "
 volumes:
