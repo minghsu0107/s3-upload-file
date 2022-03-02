@@ -81,8 +81,7 @@ func saveFileHandler(c *gin.Context) {
 		return
 	}
 
-	c.Status(http.StatusOK)
-	c.JSON(http.StatusOK, gin.H{
+	c.JSON(http.StatusCreated, gin.H{
 		"message": fmt.Sprintf("file uploaded: %s", newFileName),
 	})
 }
